@@ -1,11 +1,9 @@
-FROM openjdk:17-jdk-slim
+FROM eclipse-temurin:17-jdk-jammy
 
 WORKDIR /app
 
-# копируем jar (после сборки)
 COPY target/*.jar app.jar
 
-# Railway / Render передают порт через переменную
 ENV PORT=8080
 
 EXPOSE 8080
