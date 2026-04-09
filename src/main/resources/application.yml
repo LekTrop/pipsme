@@ -5,18 +5,3 @@ telegram:
 
 server:
   port: 8081
-
-spring:
-  datasource:
-    driver-class-name: org.postgresql.Driver
-    username: postgres
-    password: postgres
-    name: cinema_db
-    url: jdbc:postgresql://localhost:5432/cinema_db
-
-  messages:
-    basename: messages
-    encoding: utf-8
-  jpa:
-    hibernate:
-      ddl-auto: update
